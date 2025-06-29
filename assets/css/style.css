@@ -481,7 +481,7 @@ header .navbar ul li a:hover {
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  mix-blend-mode: luminosity;
+    /* mix-blend-mode: luminosity; */
   transition: 0.3s;
   cursor: pointer;
 }
@@ -1973,30 +1973,30 @@ body {
 
 
 .profile-pic-glow {
-  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
-  animation: neonGlow 1.5s ease-in-out infinite alternate;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff !important;
+  animation: neonGlow 1.5s ease-in-out infinite alternate !important;
 }
 
 @keyframes neonGlow {
   from {
-    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff !important;
   }
   to {
-    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff, 0 0 80px #0ff;
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff, 0 0 80px #0ff !important;
   }
 }
 
 [data-theme="dark-pink"] .profile-pic-glow {
-  box-shadow: 0 0 10px #e0b0ff, 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff;
-  animation: neonGlowPurple 1.5s ease-in-out infinite alternate;
+  box-shadow: 0 0 10px #e0b0ff, 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff !important;
+  animation: neonGlowPurple 1.5s ease-in-out infinite alternate !important;
 }
 
 @keyframes neonGlowPurple {
   from {
-    box-shadow: 0 0 10px #e0b0ff, 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff;
+    box-shadow: 0 0 10px #e0b0ff, 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff !important;
   }
   to {
-    box-shadow: 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff, 0 0 80px #e0b0ff;
+    box-shadow: 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff, 0 0 80px #e0b0ff !important;
   }
 }
 
