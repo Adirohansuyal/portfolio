@@ -2,7 +2,7 @@
   {
     "name": "NotyStack Android",
     "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
-    "image": "notystackandroid",
+    "image": "./assets/images/projects/notystackandroid.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -12,7 +12,7 @@
   {
     "name": "SPPU Engg Prep",
     "desc": "All in one SPPU Engineering resources. Built using Java, XML and Firebase.",
-    "image": "sppuprepandroid",
+    "image": "./assets/images/projects/sppuprepandroid.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -22,7 +22,7 @@
   {
     "name": "NewsBox Android",
     "desc": "Native android app built using Java, XML. Retrofit & Glide dependencies. Provides different category news.",
-    "image": "newsboxandroid",
+    "image": "./assets/images/projects/newsboxandroid.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -32,7 +32,7 @@
   {
     "name": "Weatherly Android",
     "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
-    "image": "weatherlyandroid",
+    "image": "./assets/images/projects/weatherlyandroid.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
