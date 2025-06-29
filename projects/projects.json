@@ -2,7 +2,7 @@
   {
     "name": "Movie Recommender System",
     "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
-    "image": "notystackandroid",
+    "image": "assets/images/projects/burgerweb.PNG",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
