@@ -1,0 +1,516 @@
+/* ===== RESPONSIVE DESIGN FOR ALL DEVICES ===== */
+
+/* Extra Large Devices (Large Desktops) - 1200px and up */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .home .content h3 {
+    font-size: 6rem;
+  }
+  
+  .home .content span {
+    font-size: 3rem;
+  }
+  
+  .section {
+    padding: 8rem 9%;
+  }
+}
+
+/* Large Devices (Desktops) - 992px to 1199px */
+@media (max-width: 1199px) and (min-width: 992px) {
+  html {
+    font-size: 60%;
+  }
+  
+  .section {
+    padding: 6rem 8%;
+  }
+  
+  .home .content h3 {
+    font-size: 5.5rem;
+  }
+}
+
+/* Medium Devices (Tablets) - 768px to 991px */
+@media (max-width: 991px) and (min-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+  
+  .section {
+    padding: 5rem 6%;
+  }
+  
+  .home .content h3 {
+    font-size: 5rem;
+  }
+  
+  .about .row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .about .row .image,
+  .about .row .content {
+    flex: 1 1 100%;
+  }
+  
+  .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .education .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .work .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small Devices (Large Phones) - 576px to 767px */
+@media (max-width: 767px) and (min-width: 576px) {
+  html {
+    font-size: 56%;
+  }
+  
+  .section {
+    padding: 4rem 5%;
+  }
+  
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+  
+  .home .content span {
+    font-size: 2.5rem;
+  }
+  
+  .about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about .row .image {
+    margin-bottom: 2rem;
+  }
+  
+  .skills .container .row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .education .box-container,
+  .work .box-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact .row {
+    flex-direction: column;
+  }
+  
+  .contact .row .content,
+  .contact .row .image {
+    flex: 1 1 100%;
+  }
+}
+
+/* Extra Small Devices (Phones) - Less than 576px */
+@media (max-width: 575px) {
+  html {
+    font-size: 54%;
+  }
+  
+  .section {
+    padding: 3rem 4%;
+  }
+  
+  .home .content h3 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  
+  .home .content span {
+    font-size: 2.2rem;
+  }
+  
+  .home .content p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+  }
+  
+  .about .row .content h3 {
+    font-size: 2.5rem;
+  }
+  
+  .about .row .content .tag {
+    font-size: 1.4rem;
+  }
+  
+  .skills .container .bar {
+    margin: 1.5rem 0;
+  }
+  
+  .education .box-container .box,
+  .work .box-container .box {
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .experience .timeline::after {
+    left: 31px;
+  }
+  
+  .experience .timeline-container {
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .experience .timeline-container::before {
+    left: 60px;
+    border: medium solid var(--primary-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+  }
+  
+  .experience .left::after,
+  .experience .right::after {
+    left: 15px;
+  }
+  
+  .experience .right {
+    left: 0%;
+  }
+}
+
+/* Ultra Small Devices (Very Small Phones) - Less than 400px */
+@media (max-width: 399px) {
+  html {
+    font-size: 52%;
+  }
+  
+  .section {
+    padding: 2.5rem 3%;
+  }
+  
+  .home .content h3 {
+    font-size: 3.5rem;
+  }
+  
+  .home .content span {
+    font-size: 2rem;
+  }
+  
+  .heading {
+    font-size: 3rem;
+  }
+  
+  header .logo {
+    font-size: 2rem;
+  }
+  
+  header .navbar ul li a {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .footer .box-container .box {
+    margin: 1rem;
+  }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media (max-height: 500px) and (orientation: landscape) {
+  .home {
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+  
+  .home .content {
+    padding-top: 2rem;
+  }
+  
+  .home .content h3 {
+    font-size: 3.5rem;
+  }
+  
+  .section {
+    padding: 3rem 5%;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .home .image img,
+  .about .row .image img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print Styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  header,
+  .theme-toggle,
+  #menu,
+  .btn,
+  .footer {
+    display: none !important;
+  }
+  
+  .section {
+    padding: 2rem 0;
+    page-break-inside: avoid;
+  }
+  
+  .home .content h3 {
+    font-size: 3rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    page-break-after: avoid;
+  }
+}
+
+/* Specific Device Breakpoints */
+
+/* iPhone SE, 5s, 5c, 5 */
+@media (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .home .content h3 {
+    font-size: 3rem;
+  }
+  
+  .section {
+    padding: 2rem 2%;
+  }
+}
+
+/* iPhone 6, 7, 8 */
+@media (min-width: 375px) and (max-width: 414px) {
+  html {
+    font-size: 54%;
+  }
+  
+  .home .content h3 {
+    font-size: 3.8rem;
+  }
+}
+
+/* iPhone 6+, 7+, 8+ */
+@media (min-width: 414px) and (max-width: 736px) {
+  html {
+    font-size: 56%;
+  }
+  
+  .home .content h3 {
+    font-size: 4.2rem;
+  }
+}
+
+/* iPad Mini, iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+  
+  .section {
+    padding: 5rem 7%;
+  }
+  
+  .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .education .box-container,
+  .work .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  html {
+    font-size: 60%;
+  }
+  
+  .section {
+    padding: 6rem 8%;
+  }
+  
+  .skills .container .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Navigation Responsive Enhancements */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 5%;
+  }
+  
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 80%;
+    height: calc(100vh - 6.5rem);
+    background-color: var(--header-bg);
+    border-left: 2px solid var(--border-color);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  header .navbar.nav-toggle {
+    right: 0;
+  }
+  
+  header .navbar ul {
+    flex-direction: column;
+    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  header .navbar ul li {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  header .navbar ul li a {
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+}
+
+/* Form Responsive Enhancements */
+@media (max-width: 768px) {
+  .contact .row form .inputBox {
+    flex-direction: column;
+  }
+  
+  .contact .row form .inputBox input {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .contact .row form textarea {
+    height: 15rem;
+  }
+}
+
+/* Skills Section Responsive */
+@media (max-width: 600px) {
+  .skills .container .row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .skills .container .bar .info span {
+    font-size: 1.6rem;
+  }
+  
+  .skills .container .bar .progress-line {
+    height: 0.8rem;
+  }
+}
+
+/* Timeline Responsive Enhancements */
+@media (max-width: 600px) {
+  .experience .timeline {
+    margin: 0 auto;
+  }
+  
+  .experience .timeline::after {
+    left: 31px;
+  }
+  
+  .experience .timeline-container {
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .experience .timeline-container::before {
+    left: 60px;
+    border: medium solid var(--primary-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+  }
+  
+  .experience .left::after,
+  .experience .right::after {
+    left: 15px;
+  }
+  
+  .experience .right {
+    left: 0%;
+  }
+  
+  .experience .timeline-content {
+    padding: 2rem;
+  }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --border-color: #000;
+    --text-color: #000;
+    --bg-color: #fff;
+  }
+  
+  [data-theme="dark"] {
+    --border-color: #fff;
+    --text-color: #fff;
+    --bg-color: #000;
+  }
+}
+
+/* Focus Visible for Better Accessibility */
+@media (hover: none) and (pointer: coarse) {
+  .btn:focus-visible,
+  header .navbar ul li a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+}
