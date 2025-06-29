@@ -2,7 +2,7 @@
   {
     "name": "Movie Recommender System",
     "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
-    "image": "assets/images/projects/burgerweb.PNG",
+    "image": "assets/images/projects/burgerweb.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -12,7 +12,7 @@
   {
     "name": "Exoplanet Confirmation and Description Model (NASA)",
     "desc": "All in one SPPU Engineering resources. Built using Java, XML and Firebase.",
-    "image": "sppuprepandroid",
+    "image": "assets/images/projects/sppuprepandroid.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -22,7 +22,7 @@
   {
     "name": "AirFare Price Prediction WebApp",
     "desc": "Native android app built using Java, XML. Retrofit & Glide dependencies. Provides different category news.",
-    "image": "newsboxandroid",
+    "image": "assets/images/projects/newsboxandroid.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -32,7 +32,7 @@
   {
     "name": "Voice-Controlled WebApp",
     "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
-    "image": "weatherlyandroid",
+    "image": "assets/images/projects/weatherlyandroid.png",
     "category": "android",
     "links": {
       "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
@@ -52,7 +52,7 @@
   {
     "name": "FaceMark Pro",
     "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
-    "image": "flipkartmern",
+    "image": "assets/images/projects/flipkartmern.png",
     "category": "mern",
     "links": {
       "view": "https://flipkartwebs.herokuapp.com/",
@@ -62,7 +62,7 @@
   {
     "name": "HealthMate AI",
     "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
-    "image": "resumegen",
+    "image": "assets/images/projects/resumegen.png",
     "category": "mern",
     "links": {
       "view": "https://resumegenx.netlify.app/",
@@ -72,7 +72,7 @@
   {
     "name": "Bank Database Project",
     "desc": "Full-Stack project dashboard which is collection of projects built on the React library.",
-    "image": "reactprojects",
+    "image": "assets/images/projects/reactprojects.png",
     "category": "mern",
     "links": {
       "view": "https://reactjsprojects.herokuapp.com/",
@@ -82,18 +82,11 @@
   {
     "name": "Image Editing Website",
     "desc": "Full-Stack Flipkart Clone Using LAMP Stack. With all major features and OTP authentication and Cashfree payment gateway.",
-    "image": "flipkartphp",
+    "image": "assets/images/projects/flipkartphp.png",
     "category": "lamp",
     "links": {
       "view": "https://github.com/jigar-sable/Flipkart-Clone-PHP",
       "code": "https://github.com/jigar-sable/Flipkart-Clone-PHP"
     }
   }
-  
-  
-  
-  
-  
-  
-  
 ]
