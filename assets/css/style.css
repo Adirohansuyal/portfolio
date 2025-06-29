@@ -18,11 +18,11 @@
   --scrollbar-track: rgb(235, 202, 245);
   --scrollbar-thumb: #420177;
   --loader-bg: #e6eff1;
-  --highlight-color: rgb(115, 3, 167);
+  --highlight-color: #00008B;
 }
 
-/* Dark Theme Colors */
-[data-theme="dark"] {
+/* Dark Yellow Theme Colors */
+[data-theme="dark-yellow"] {
   --bg-color: #1a1a1a;
   --primary-color: #ffd700;
   --secondary-color: #ffed4e;
@@ -37,7 +37,26 @@
   --scrollbar-track: #333333;
   --scrollbar-thumb: #ffd700;
   --loader-bg: #1a1a1a;
-  --highlight-color: #ffd700;
+  --highlight-color: #FF8C00; /* Dark Orange */
+}
+
+/* Dark Pink Theme Colors */
+[data-theme="dark-pink"] {
+  --bg-color: #1a1a1a;
+  --primary-color: #ff69b4; /* Hot Pink */
+  --secondary-color: #ffc0cb; /* Light Pink */
+  --accent-color: #ff69b4;
+  --text-color: #ff69b4;
+  --text-secondary: #ffffff;
+  --header-bg: #000000;
+  --card-bg: #2a2a2a;
+  --border-color: rgba(255, 105, 180, 0.3);
+  --selection-bg: #ff69b4;
+  --selection-color: #000;
+  --scrollbar-track: #333333;
+  --scrollbar-thumb: #ff69b4;
+  --loader-bg: #1a1a1a;
+  --highlight-color: #ff69b4;
 }
 
 * {
@@ -125,8 +144,10 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: var(--header-bg);
-  box-shadow: 0 1px 4px var(--border-color);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header-controls {
@@ -466,6 +487,12 @@ header .navbar ul li a:hover {
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .about .row .content h3 {
   color: var(--text-secondary);
@@ -556,16 +583,25 @@ header .navbar ul li a:hover {
   background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
 
-[data-theme="dark"] .skills {
-  background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
+[data-theme="dark-yellow"] .skills {
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+[data-theme="dark-pink"] .skills {
+  background: linear-gradient(to bottom, #330033, #660066); /* Pink dark theme background */
 }
 
 .skills h2 {
-  color: var(--text-secondary);
+  color: #fff;
 }
 .skills .heading span {
   color: var(--accent-color);
 }
+
+[data-theme="dark-yellow"] .skills .heading span {
+  color: #FF8C00;
+}
+
 .skills .container {
   background: rgba(0, 0, 22, 0.4);
   color: var(--text-secondary);
@@ -660,33 +696,42 @@ header .navbar ul li a:hover {
   align-items: center;
   flex-direction: column;
 }
+
 .education .box-container .box {
   display: flex;
   flex-direction: row;
   width: 80%;
   border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
   position: relative;
   margin-top: 2rem;
   overflow: hidden;
   transition: 0.3s;
-  background: rgb(252, 252, 252);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  perspective: 1000px;
 }
-.education .box-container .box:hover {
-  transform: scale(1.03);
-  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
-}
+
 .education .box-container .box .image {
-  flex: 1 1 20rem;
-  width: 100%;
+  width: 25rem;
+  height: 25rem;
 }
-.education .box-container .box img {
-  object-fit: cover;
-  position: relative;
+
+.education .box-container .box .image img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease-out;
 }
+
+.education .box-container .box:hover .image img {
+  transform: scale(1.05) translateZ(50px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
 .education .box-container .box .content {
   position: relative;
   display: flex;
@@ -697,11 +742,14 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
-  color: #012970;
+  color: var(--primary-color);
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
   margin-left: 1rem;
+}
+.education .box-container .box .content h3.yellow-text {
+  color: #ffd700; /* Yellow */
 }
 .education .box-container .box .content p {
   font-size: 1.5rem;
@@ -716,6 +764,9 @@ header .navbar ul li a:hover {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
+.education h4.white-text {
+  color: #ffffff; /* White */
+}
 
 /* education media queries starts*/
 @media screen and (max-width: 600px) {
@@ -729,6 +780,7 @@ header .navbar ul li a:hover {
   }
   .education .box-container .box img {
     width: 100%;
+    object-fit: contain;
   }
   .education .box-container .box .content {
     position: relative;

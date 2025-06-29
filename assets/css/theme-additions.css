@@ -1,95 +1,119 @@
 /* Additional Theme Styles */
 
 /* Dark theme hover effects for skills section */
-[data-theme="dark"] .skills .container .bar:hover {
+[data-theme="dark-yellow"] .skills .container .bar:hover {
   box-shadow: 0 8px 10px rgba(255, 215, 0, 0.4) !important;
 }
 
+[data-theme="dark-pink"] .skills .container .bar:hover {
+  box-shadow: 0 8px 10px rgba(255, 105, 180, 0.4) !important;
+}
+
 /* Education section dark theme */
-[data-theme="dark"] .education {
+[data-theme="dark-yellow"] .education,
+[data-theme="dark-pink"] .education {
   background: var(--bg-color);
 }
 
 /* Work section dark theme */
-[data-theme="dark"] .work {
+[data-theme="dark-yellow"] .work,
+[data-theme="dark-pink"] .work {
   background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
 }
 
 /* Contact section dark theme */
-[data-theme="dark"] .contact {
+[data-theme="dark-yellow"] .contact,
+[data-theme="dark-pink"] .contact {
   background: var(--bg-color);
 }
 
-[data-theme="dark"] .contact .container {
+[data-theme="dark-yellow"] .contact .container,
+[data-theme="dark-pink"] .contact .container {
   background: var(--card-bg);
   border: 2px solid var(--border-color);
 }
 
 /* Footer dark theme */
-[data-theme="dark"] .footer {
+[data-theme="dark-yellow"] .footer,
+[data-theme="dark-pink"] .footer {
   background: #000000;
 }
 
-[data-theme="dark"] .footer .box-container .box h2 {
+[data-theme="dark-yellow"] .footer .box-container .box h2,
+[data-theme="dark-pink"] .footer .box-container .box h2 {
   color: var(--primary-color);
 }
 
-[data-theme="dark"] .footer .box-container .box p {
+[data-theme="dark-yellow"] .footer .box-container .box p,
+[data-theme="dark-pink"] .footer .box-container .box p {
   color: var(--text-secondary);
 }
 
-[data-theme="dark"] .footer .box-container .box a {
+[data-theme="dark-yellow"] .footer .box-container .box a,
+[data-theme="dark-pink"] .footer .box-container .box a {
   color: var(--text-secondary);
 }
 
-[data-theme="dark"] .footer .box-container .box a:hover {
+[data-theme="dark-yellow"] .footer .box-container .box a:hover,
+[data-theme="dark-pink"] .footer .box-container .box a:hover {
   color: var(--primary-color);
 }
 
 /* Scroll to top button dark theme */
-[data-theme="dark"] #scroll-top {
+[data-theme="dark-yellow"] #scroll-top,
+[data-theme="dark-pink"] #scroll-top {
   background: var(--primary-color);
   color: var(--bg-color);
 }
 
 /* Form elements dark theme */
-[data-theme="dark"] input,
-[data-theme="dark"] textarea {
+[data-theme="dark-yellow"] input,
+[data-theme="dark-yellow"] textarea,
+[data-theme="dark-pink"] input,
+[data-theme="dark-pink"] textarea {
   background: var(--card-bg);
   color: var(--text-color);
   border: 1px solid var(--border-color);
 }
 
-[data-theme="dark"] input:focus,
-[data-theme="dark"] textarea:focus {
+[data-theme="dark-yellow"] input:focus,
+[data-theme="dark-yellow"] textarea:focus,
+[data-theme="dark-pink"] input:focus,
+[data-theme="dark-pink"] textarea:focus {
   border-color: var(--primary-color);
 }
 
 /* Button dark theme */
-[data-theme="dark"] .btn {
+[data-theme="dark-yellow"] .btn,
+[data-theme="dark-pink"] .btn {
   background: var(--primary-color);
   color: var(--bg-color);
 }
 
-[data-theme="dark"] .btn:hover {
+[data-theme="dark-yellow"] .btn:hover,
+[data-theme="dark-pink"] .btn:hover {
   background: var(--secondary-color);
 }
 
 /* Timeline dark theme */
-[data-theme="dark"] .timeline {
+[data-theme="dark-yellow"] .timeline,
+[data-theme="dark-pink"] .timeline {
   background: var(--primary-color);
 }
 
-[data-theme="dark"] .timeline .content {
+[data-theme="dark-yellow"] .timeline .content,
+[data-theme="dark-pink"] .timeline .content {
   background: var(--card-bg);
   border: 2px solid var(--border-color);
 }
 
-[data-theme="dark"] .timeline .content h3 {
+[data-theme="dark-yellow"] .timeline .content h3,
+[data-theme="dark-pink"] .timeline .content h3 {
   color: var(--primary-color);
 }
 
-[data-theme="dark"] .timeline .content p {
+[data-theme="dark-yellow"] .timeline .content p,
+[data-theme="dark-pink"] .timeline .content p {
   color: var(--text-color);
 }
 
@@ -120,23 +144,28 @@
 }
 
 /* Ensure particles.js works well with dark theme */
-[data-theme="dark"] #particles-js {
+[data-theme="dark-yellow"] #particles-js,
+[data-theme="dark-pink"] #particles-js {
   opacity: 0.7;
 }
 
 /* Card components dark theme */
-[data-theme="dark"] .card,
-[data-theme="dark"] .box {
+[data-theme="dark-yellow"] .card,
+[data-theme="dark-yellow"] .box,
+[data-theme="dark-pink"] .card,
+[data-theme="dark-pink"] .box {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   color: var(--text-color);
 }
 
 /* Links dark theme */
-[data-theme="dark"] a {
+[data-theme="dark-yellow"] a,
+[data-theme="dark-pink"] a {
   color: var(--primary-color);
 }
 
-[data-theme="dark"] a:hover {
+[data-theme="dark-yellow"] a:hover,
+[data-theme="dark-pink"] a:hover {
   color: var(--secondary-color);
 }

@@ -1,122 +1,153 @@
+
 [
     {
         "name": "ReactJS",
-        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
+        "description": "A free and open-source front-end JavaScript library for building user interfaces based on components."
     },
     {
         "name": "ExpressJS",
-        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png",
+        "description": "A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications."
     },
     {
         "name": "NodeJS",
-        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+        "icon": "https://img.icons8.com/color/48/000000/nodejs.png",
+        "description": "A cross-platform, open-source, back-end JavaScript runtime environment that executes JavaScript code outside a web browser."
     },
     {
         "name": "Redux",
-        "icon": "https://img.icons8.com/color/48/000000/redux.png"
+        "icon": "https://img.icons8.com/color/48/000000/redux.png",
+        "description": "A predictable state container for JavaScript apps, often used with React."
     },
     {
         "name": "Firebase",
-        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png",
+        "description": "A platform developed by Google for creating mobile and web applications."
     },
     {
         "name": "Android",
-        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
+        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png",
+        "description": "A mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices."
     },
     {
         "name": "MaterialUI",
-        "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
+        "icon": "https://img.icons8.com/color/48/000000/material-ui.png",
+        "description": "A library that provides React components that implement Google's Material Design."
     },
     {
         "name": "ChakraUI",
-        "icon": "https://img.icons8.com/color/48/000000/chakra-ui.png"
+        "icon": "https://img.icons8.com/color/48/000000/chakra-ui.png",
+        "description": "A component library for React that provides simple, modular, and accessible UI components to build applications with speed."
     },
     {
         "name": "TailwindCSS",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png",
+        "description": "A utility-first CSS framework for rapidly building custom user interfaces."
     },
     {
         "name": "Bootstrap",
-        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png",
+        "description": "A popular open-source CSS framework directed at responsive, mobile-first front-end web development."
     },
     {
         "name": "Sass",
-        "icon": "https://img.icons8.com/color/48/000000/sass.png"
+        "icon": "https://img.icons8.com/color/48/000000/sass.png",
+        "description": "A preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)."
     },
     {
         "name": "HTML5",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png",
+        "description": "The latest version of Hypertext Markup Language, the standard markup language for documents designed to be displayed in a web browser."
     },
     {
         "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+        "icon": "https://img.icons8.com/color/48/000000/css3.png",
+        "description": "The latest evolution of the Cascading Style Sheets language, used for describing the presentation of a document written in a markup language like HTML."
     },
     {
         "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png",
+        "description": "A programming language that conforms to the ECMAScript specification, and is a core technology of the World Wide Web, alongside HTML and CSS."
     },
     {
         "name": "Java",
-        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png",
+        "description": "A general-purpose, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible."
     },
     {
         "name": "Kotlin",
-        "icon": "https://img.icons8.com/color/48/000000/kotlin.png"
+        "icon": "https://img.icons8.com/color/48/000000/kotlin.png",
+        "description": "A cross-platform, statically typed, general-purpose programming language with type inference. It is designed to interoperate fully with Java."
     },
     {
         "name": "PHP",
-        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png",
+        "description": "A popular general-purpose scripting language that is especially suited to web development."
     },
     {
         "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png",
+        "description": "An interpreted, high-level and general-purpose programming language. It's widely used in web development, data science, and automation."
     },
     {
         "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
+        "description": "A general-purpose programming language created as an extension of the C programming language, or 'C with Classes'."
     },
     {
         "name": "MongoDB",
-        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png",
+        "description": "A source-available cross-platform document-oriented database program."
     },
     {
         "name": "MySQL",
-        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png",
+        "description": "An open-source relational database management system."
     },
     {
         "name": "PostgreSQL",
-        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png",
+        "description": "A powerful, open-source object-relational database system."
     },
     {
         "name": "AWS",
-        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png",
+        "description": "A subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis."
     },
     {
         "name": "Heroku",
-        "icon": "https://img.icons8.com/color/48/000000/heroku.png"
+        "icon": "https://img.icons8.com/color/48/000000/heroku.png",
+        "description": "A cloud platform as a service (PaaS) supporting several programming languages."
     },
     {
         "name": "Netlify",
-        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png",
+        "description": "A cloud computing company that offers a development platform that includes build, deploy, and serverless backend services for web applications and dynamic websites."
     },
     {
         "name": "DigitalOcean",
-        "icon": "https://img.icons8.com/ios-filled/48/0080FF/digitalocean.png"
+        "icon": "https://img.icons8.com/ios-filled/48/0080FF/digitalocean.png",
+        "description": "An American cloud infrastructure provider that provides developers cloud services that help to deploy and scale applications that run simultaneously on multiple computers."
     },
     {
         "name": "jQuery",
-        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
+        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png",
+        "description": "A fast, small, and feature-rich JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax."
     },
     {
         "name": "Git VCS",
-        "icon": "https://img.icons8.com/color/48/000000/git.png"
+        "icon": "https://img.icons8.com/color/48/000000/git.png",
+        "description": "A free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
     },
     {
         "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png",
+        "description": "A provider of Internet hosting for software development and version control using Git."
     },
     {
         "name": "WordPress",
-        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    }    
+        "icon": "https://img.icons8.com/color/48/000000/wordpress.png",
+        "description": "A free and open-source content management system written in PHP and paired with a MySQL or MariaDB database."
+    }
 ]

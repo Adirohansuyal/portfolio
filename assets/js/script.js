@@ -2,30 +2,48 @@ $(document).ready(function () {
 
     // Theme Toggle Functionality
     const themeToggle = document.getElementById('theme-toggle');
+    const themeToggleYellow = document.getElementById('theme-toggle-yellow');
+    const themeTogglePink = document.getElementById('theme-toggle-pink');
     const body = document.body;
-    
+
     // Check for saved theme preference or default to 'light'
     const currentTheme = localStorage.getItem('theme') || 'light';
     body.setAttribute('data-theme', currentTheme);
-    
+
     // Update toggle icon based on current theme
-    updateThemeIcon(currentTheme);
-    
+    updateThemeIcons(currentTheme);
+
     themeToggle.addEventListener('click', function() {
-        const currentTheme = body.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        body.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
+        setTheme('light');
     });
-    
-    function updateThemeIcon(theme) {
-        const icon = themeToggle.querySelector('i');
-        if (theme === 'dark') {
-            icon.className = 'fas fa-sun';
-        } else {
-            icon.className = 'fas fa-moon';
+
+    themeToggleYellow.addEventListener('click', function() {
+        setTheme('dark-yellow');
+    });
+
+    themeTogglePink.addEventListener('click', function() {
+        setTheme('dark-pink');
+    });
+
+    function setTheme(theme) {
+        body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateThemeIcons(theme);
+    }
+
+    function updateThemeIcons(theme) {
+        // Reset all icons first
+        themeToggle.querySelector('i').className = 'fas fa-moon';
+        themeToggleYellow.querySelector('i').className = 'fas fa-sun';
+        themeTogglePink.querySelector('i').className = 'fas fa-sun';
+
+        // Highlight the active theme's icon
+        if (theme === 'light') {
+            themeToggle.querySelector('i').className = 'fas fa-moon'; // Or a different icon for active light
+        } else if (theme === 'dark-yellow') {
+            themeToggleYellow.querySelector('i').className = 'fas fa-sun'; // Or a different icon for active yellow
+        } else if (theme === 'dark-pink') {
+            themeTogglePink.querySelector('i').className = 'fas fa-sun'; // Or a different icon for active pink
         }
     }
 
@@ -123,7 +141,7 @@ function showSkills(skills) {
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
-        <div class="bar">
+        <div class="bar" title="${skill.description}">
               <div class="info">
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
@@ -161,6 +179,15 @@ function showProjects(projects) {
         max: 15,
     });
     // <!-- tilt js effect ends -->
+
+    // <!-- tilt js effect for education images starts -->
+    VanillaTilt.init(document.querySelectorAll(".education .box.tilt"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+    });
+    // <!-- tilt js effect for education images ends -->
 
     /* ===== SCROLL REVEAL ANIMATION ===== */
     const srtop = ScrollReveal({
