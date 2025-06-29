@@ -32,7 +32,7 @@ document.addEventListener('visibilitychange',
 
 // fetch projects start
 function getProjects() {
-    return fetch("/projects/projects.json")
+    return fetch("../projects/projects.json")
         .then(response => {
             if (!response.ok) {
                 console.error('Network response was not ok', response.statusText);
@@ -110,9 +110,9 @@ function showProjects(projects) {
     });
 
     // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 20,
+    });
     // // vanilla tilt.js  
 
     // /* ===== SCROLL REVEAL ANIMATION ===== */
