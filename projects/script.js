@@ -33,9 +33,20 @@ document.addEventListener('visibilitychange',
 // fetch projects start
 function getProjects() {
     return fetch("/projects/projects.json")
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                console.error('Network response was not ok', response.statusText);
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
-            return data
+            console.log("Projects data loaded:", data);
+            return data;
+        })
+        .catch(error => {
+            console.error("Error fetching projects.json:", error);
+            return [];
         });
 }
 
@@ -47,7 +58,7 @@ function showProjects(projects) {
         projectsHTML += `
         <div class="grid-item ${project.category}">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.PNG" alt="project" />
+      <img draggable="false" src="/assets/images/projects/${project.image}.png" onerror="this.onerror=null;this.src='/assets/images/projects/${project.image}.PNG';" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
