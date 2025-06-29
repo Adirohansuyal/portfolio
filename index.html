@@ -324,6 +324,8 @@
     </style>
 </head>
 <body oncontextmenu="return false">
+<div class="custom-cursor"></div>
+<canvas id="mouseTrailCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9998;"></canvas>
 
 <!-- pre loader -->
 <!-- <div class="loader-container">
@@ -337,6 +339,12 @@
         <div class="header-controls">
             <div id="theme-toggle" class="theme-toggle">
                 <i class="fas fa-moon"></i>
+            </div>
+            <div id="theme-toggle-yellow" class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div id="theme-toggle-pink" class="theme-toggle">
+                <i class="fas fa-sun"></i>
             </div>
             <div id="menu" class="fas fa-bars"></div>
         </div>
@@ -376,7 +384,7 @@
       </div>
     </div>
 <div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/adi.jpeg" alt="">
+    <img draggable="false" class="tilt profile-pic-glow" src="./assets/images/adi.jpeg" alt="">
 </div>
 </section>
 <!-- hero section ends -->
@@ -430,7 +438,6 @@
 </section>
 <!-- about section ends -->
 
-<!-- skills section starts -->
 <section class="skills" id="skills">
 
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
@@ -438,17 +445,9 @@
     <div class="container">
           <div class="row" id="skillsContainer">
 
-            <!-- <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-                <span>AdobeXD</span>
-              </div>
-            </div> -->
-
       </div>
 </div>
 </section>
-<!-- skills section ends -->
 
 
 <!-- education section starts -->
@@ -726,6 +725,8 @@
 
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/responsive.js"></script>
+<script src="./assets/js/mouse-trail.js"></script>
 
 </body>
 </html>
+

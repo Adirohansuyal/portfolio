@@ -56,10 +56,15 @@ $(document).ready(function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
-        } else {
-            document.querySelector('#scroll-top').classList.remove('active');
+        // Scroll-up button visibility
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            const aboutSectionTop = aboutSection.offsetTop;
+            if (window.scrollY > aboutSectionTop) {
+                document.querySelector('#scroll-top').classList.add('active');
+            } else {
+                document.querySelector('#scroll-top').classList.remove('active');
+            }
         }
 
         // scroll spy
@@ -101,6 +106,30 @@ $(document).ready(function () {
     });
     // <!-- emailjs to mail contact form data -->
 
+});
+
+// Custom Cursor
+const customCursor = document.createElement('div');
+customCursor.classList.add('custom-cursor');
+document.body.appendChild(customCursor);
+
+document.addEventListener('mousemove', (e) => {
+    customCursor.style.left = e.clientX + 'px';
+    customCursor.style.top = e.clientY + 'px';
+});
+
+document.addEventListener('mouseover', (e) => {
+    if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('.btn') || e.target.closest('.social-icons a')) {
+        customCursor.classList.add('hover');
+    } else {
+        customCursor.classList.remove('hover');
+    }
+});
+
+document.addEventListener('mouseout', (e) => {
+    if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('.btn') || e.target.closest('.social-icons a')) {
+        customCursor.classList.remove('hover');
+    }
 });
 
 document.addEventListener('visibilitychange',

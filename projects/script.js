@@ -65,6 +65,39 @@ function showProjects(projects) {
     });
     projectsContainer.innerHTML = projectsHTML;
 
+    document.querySelectorAll('.work .box').forEach(box => {
+        let summaryCache = {}; // Cache for summaries
+
+        box.addEventListener('mouseenter', async () => {
+            const descriptionElement = box.querySelector('.project-description');
+            const originalDesc = descriptionElement.dataset.originalDesc;
+            const projectId = box.querySelector('h3').textContent; // Using project name as ID for cache
+
+            if (!summaryCache[projectId]) {
+                try {
+                    const response = await fetch('/summarize', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ text: originalDesc }),
+                    });
+                    const data = await response.json();
+                    summaryCache[projectId] = data.summary || originalDesc;
+                } catch (error) {
+                    console.error('Error fetching summary:', error);
+                    summaryCache[projectId] = originalDesc; // Fallback on error
+                }
+            }
+            descriptionElement.textContent = summaryCache[projectId];
+        });
+
+        box.addEventListener('mouseleave', () => {
+            const descriptionElement = box.querySelector('.project-description');
+            descriptionElement.textContent = descriptionElement.dataset.originalDesc;
+        });
+    });
+
     // vanilla tilt.js
     // VanillaTilt.init(document.querySelectorAll(".tilt"), {
     //     max: 20,

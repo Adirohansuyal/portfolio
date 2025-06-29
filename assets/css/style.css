@@ -318,10 +318,14 @@ header .navbar ul li a:hover {
 .home .image {
   flex: 1 1 40rem;
   z-index: 1;
+  display: flex; /* Added to center the wrapper */
+  justify-content: center; /* Added to center the wrapper */
+  align-items: center; /* Added to center the wrapper */
 }
 .home .image img {
-  width: 70%;
-  margin-left: 6rem;
+  width: 70%; /* Original width */
+  height: auto; /* Ensure aspect ratio is maintained */
+  margin: 0; /* Remove original margin-left */
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -1856,21 +1860,41 @@ form textarea:focus-visible {
 }
 /* common media queries ends*/
 
+.spark {
+    position: fixed;
+    background-color: #FFD700; /* Gold color for sparks */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
 /* scroll top starts */
 #scroll-top {
   position: fixed;
-  top: -140%;
+  bottom: 2rem; /* Position from bottom */
   right: 2rem;
-  padding: 1rem 1.5rem;
-  font-size: 2rem;
-  background: #ffae00;
-  color: rgb(13, 0, 44);
+  padding: 1.2rem 1.5rem; /* Slightly larger padding */
+  font-size: 2.2rem; /* Slightly larger icon */
+  background: var(--primary-color); /* Use theme primary color */
+  color: var(--bg-color); /* Use theme background color for text */
   border-radius: 50%;
-  transition: 1s linear;
+  transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
   z-index: 1000;
+  opacity: 0; /* Start hidden */
+  transform: translateY(100px); /* Start off-screen */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
 }
+
 #scroll-top.active {
-  top: calc(100% - 12rem);
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Slide up */
+}
+
+#scroll-top:hover {
+  background: var(--secondary-color); /* Change color on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 /* scroll top ends */
 /* Enhanced Hero Section Heading Visibility - Override any conflicts */
@@ -1920,3 +1944,74 @@ form textarea:focus-visible {
     font-size: clamp(1.8rem, 6vw, 3rem) !important;
   }
 }
+
+/* Custom Cursor */
+body {
+  cursor: none; /* Hide default cursor */
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px; /* Size of the custom cursor */
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-color); /* Color of the custom cursor */
+  pointer-events: none; /* Allow clicks to pass through */
+  transform: translate(-50%, -50%); /* Center the cursor */
+  z-index: 9999; /* Ensure it's on top */
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
+}
+
+.custom-cursor.hover {
+  width: 40px; /* Enlarge on hover */
+  height: 40px;
+  background-color: var(--accent-color); /* Change color on hover */
+}
+
+
+
+.profile-pic-glow {
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+  }
+  to {
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff, 0 0 80px #0ff;
+  }
+}
+
+[data-theme="dark-pink"] .profile-pic-glow {
+  box-shadow: 0 0 10px #e0b0ff, 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff;
+  animation: neonGlowPurple 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlowPurple {
+  from {
+    box-shadow: 0 0 10px #e0b0ff, 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff;
+  }
+  to {
+    box-shadow: 0 0 20px #e0b0ff, 0 0 30px #e0b0ff, 0 0 40px #e0b0ff, 0 0 50px #e0b0ff, 0 0 60px #e0b0ff, 0 0 70px #e0b0ff, 0 0 80px #e0b0ff;
+  }
+}
+
+[data-theme="dark-yellow"] .profile-pic-glow {
+  box-shadow: 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 30px #ffa500, 0 0 40px #ffa500, 0 0 50px #ffa500, 0 0 60px #ffa500, 0 0 70px #ffa500;
+  animation: neonGlowOrange 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlowOrange {
+  from {
+    box-shadow: 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 30px #ffa500, 0 0 40px #ffa500, 0 0 50px #ffa500, 0 0 60px #ffa500, 0 0 70px #ffa500;
+  }
+  to {
+    box-shadow: 0 0 20px #ffa500, 0 0 30px #ffa500, 0 0 40px #ffa500, 0 0 50px #ffa500, 0 0 60px #ffa500, 0 0 70px #ffa500, 0 0 80px #ffa500;
+  }
+}
+
+

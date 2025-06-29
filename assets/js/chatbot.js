@@ -21,10 +21,31 @@ function addMessage(sender, message) {
 }
 
 async function getBotResponse(message) {
-    const response = await fetch(`https://api.gemini.com/v1/your-api-key/your-model/generate-content?prompt=${message}`);
-    const data = await response.json();
-    const botMessage = data.candidates[0].content.parts[0].text;
-    addMessage('bot', botMessage);
+    // IMPORTANT: For security, your Gemini API key should NEVER be exposed directly in client-side code.
+    // You need a backend proxy to handle the API calls securely.
+    // This function will send the user's message to a hypothetical backend endpoint.
+
+    try {
+        const response = await fetch('/chat-proxy', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ prompt: message }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        // Assuming your backend sends back a JSON object with a 'text' field for the bot's response
+        const botMessage = data.text || "I'm sorry, I couldn't get a response from the AI.";
+        addMessage('bot', botMessage);
+    } catch (error) {
+        console.error('Error fetching bot response:', error);
+        addMessage('bot', "Oops! Something went wrong. Please try again later.");
+    }
 }
 
 function scrollToBottom() {
